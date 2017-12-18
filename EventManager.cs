@@ -17,12 +17,7 @@ namespace Lab8
         private readonly WindowShowHandler _windowShow;
         private int a_key_pressed;
 
-        [DllImport("user32.dll")]
-        public static extern IntPtr GetForegroundWindow();
-
-
-        [DllImport("user32.dll")]
-        static extern int LoadKeyboardLayout(string pwszKLID, uint Flags);
+        
 
         public EventManager(Settings config, WindowShowHandler windowShow)
         {
