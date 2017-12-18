@@ -20,8 +20,6 @@ namespace Lab8
         [DllImport("user32.dll")]
         public static extern IntPtr GetForegroundWindow();
 
-        [DllImport("user32.dll", CharSet = CharSet.Auto)]
-        public static extern bool PostMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
 
         [DllImport("user32.dll")]
         static extern int LoadKeyboardLayout(string pwszKLID, uint Flags);
